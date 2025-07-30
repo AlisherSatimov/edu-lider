@@ -1,0 +1,133 @@
+export interface ShopItem {
+  id: string;
+  name: string;
+  description: string;
+  coinCost: number;
+  category: "electronics" | "books" | "food" | "activities" | "other";
+  image: string;
+  available: boolean;
+  stock: number;
+}
+
+export const shopItems: ShopItem[] = [
+  {
+    id: "1",
+    name: "Wireless Earbuds",
+    description: "High-quality wireless earbuds with noise cancellation",
+    coinCost: 200,
+    category: "electronics",
+    image: "/images/earbuds.jpg",
+    available: true,
+    stock: 5,
+  },
+  {
+    id: "2",
+    name: "Scientific Calculator",
+    description: "Advanced calculator for mathematics and science",
+    coinCost: 150,
+    category: "electronics",
+    image: "/images/calculator.jpg",
+    available: true,
+    stock: 10,
+  },
+  {
+    id: "3",
+    name: "Physics Textbook",
+    description: "Comprehensive physics textbook for advanced students",
+    coinCost: 100,
+    category: "books",
+    image: "/images/physics-book.jpg",
+    available: true,
+    stock: 8,
+  },
+  {
+    id: "4",
+    name: "Mathematics Workbook",
+    description: "Practice workbook with exercises and solutions",
+    coinCost: 75,
+    category: "books",
+    image: "/images/math-workbook.jpg",
+    available: true,
+    stock: 15,
+  },
+  {
+    id: "5",
+    name: "Cafeteria Voucher",
+    description: "Free meal voucher for the school cafeteria",
+    coinCost: 50,
+    category: "food",
+    image: "/images/cafeteria.jpg",
+    available: true,
+    stock: 20,
+  },
+  {
+    id: "6",
+    name: "Snack Pack",
+    description: "Assorted healthy snacks and drinks",
+    coinCost: 30,
+    category: "food",
+    image: "/images/snacks.jpg",
+    available: true,
+    stock: 25,
+  },
+  {
+    id: "7",
+    name: "Movie Ticket",
+    description: "Free movie ticket for local cinema",
+    coinCost: 120,
+    category: "activities",
+    image: "/images/movie-ticket.jpg",
+    available: true,
+    stock: 3,
+  },
+  {
+    id: "8",
+    name: "Bowling Pass",
+    description: "2-hour bowling session with friends",
+    coinCost: 80,
+    category: "activities",
+    image: "/images/bowling.jpg",
+    available: true,
+    stock: 7,
+  },
+  {
+    id: "9",
+    name: "School T-Shirt",
+    description: "Official Edu-Lider branded t-shirt",
+    coinCost: 60,
+    category: "other",
+    image: "/images/tshirt.jpg",
+    available: true,
+    stock: 12,
+  },
+  {
+    id: "10",
+    name: "Water Bottle",
+    description: "Reusable water bottle with school logo",
+    coinCost: 40,
+    category: "other",
+    image: "/images/water-bottle.jpg",
+    available: true,
+    stock: 18,
+  },
+  {
+    id: "11",
+    name: "Backpack",
+    description: "Durable school backpack with multiple compartments",
+    coinCost: 180,
+    category: "other",
+    image: "/images/backpack.jpg",
+    available: true,
+    stock: 4,
+  },
+  {
+    id: "12",
+    name: "Art Supplies Kit",
+    description: "Complete set of art supplies for creative projects",
+    coinCost: 90,
+    category: "other",
+    image: "/images/art-supplies.jpg",
+    available: true,
+    stock: 6,
+  },
+];
